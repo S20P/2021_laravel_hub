@@ -1,0 +1,35 @@
+php artisan make:controller Auth/AuthController
+
+php artisan make:middleware SessionHasUser
+
+
+ changes file
+
+ Project dir => Laravel/Demo/Custom Login and Registration/laravelcustomauth/
+ 
+  routes/web.php
+
+  app/Http/Controllers/Auth/AuthController.php
+
+  resources/views/auth
+
+  public/css/auth-theme.css
+
+
+  app/Http/Middleware/SessionHasUser.php
+
+  app/Http/Kernel.php
+
+
+Hello,
+
+I have added login page on this project.
+
+
+  http://secure.accucut.com/public/
+
+  Login Details
+  username/email => admin@acucut.net
+  password => Am+[FoC*N7|'un+Y
+
+ Note: If you have any questions let us know.

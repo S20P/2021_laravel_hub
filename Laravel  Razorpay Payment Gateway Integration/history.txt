@@ -1,0 +1,44 @@
+
+
+ Usefull link => https://websolutionstuff.com/post/how-to-integrate-razorpay-payment-gateway-in-laravel
+
+              =>  https://www.w3adda.com/blog/laravel-5-8-razorpay-payment-gateway-integration 
+
+
+
+ Database = laravel_razorpay
+
+  RAZOR_KEY="rzp_test_pApdCcjqhj2ypU"
+  RAZOR_SECRET="pe5RwEuBL8ht9TewsK0wGvbz"
+
+ Start process 
+
+ composer create-project --prefer-dist laravel/laravel RazorPayDemo
+
+ //composer require razorpay/razorpay
+
+   
+   Demo working fine
+
+    http://localhost:8000/my-store
+
+    php artisan make:model RazorpayPayment -m
+
+    php artisan migrate
+
+    php artisan make:controller razorpay/PaymentController
+
+    resources/views/razorpay/
+    payment.blade.php
+    thankyou.blade.php
+
+
+    changes main files
+
+          /routes/web.php
+          /.env
+          /app/Http/Controllers/razorpay/PaymentController.php
+          /resources/views/razorpay/payment.blade.
+          /resources/views/razorpay/thankyou.blade.php
+          /app/Models/RazorpayPayment.php
+          /database/migrations/2021_04_27_104958_create_razorpay_payments_table.php

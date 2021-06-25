@@ -1,0 +1,36 @@
+
+
+ Usefull link => https://stackcoder.in/posts/stripe-payment-integration-with-laravel
+
+
+ Database = laravel_stripepay
+ 
+ Start process 
+
+ composer create-project --prefer-dist laravel/laravel StripePayDemo
+
+ composer require stripe/stripe-php
+
+STRIPE_PUBLISH_KEY=pk_test_...
+STRIPE_SECRET_KEY=sk_test_...
+
+  php artisan make:model Payment -mc 
+
+  php artisan migrate
+
+   Demo working fine
+
+    http://localhost:8000/payments
+    
+    
+ changes main files
+
+      /StripePayDemo/routes/web.php
+      /StripePayDemo/.env
+      /StripePayDemo/app/Http/Controllers/PaymentController.php
+      /StripePayDemo/resources/views/StripePayments/thankyou.blade.php
+      /StripePayDemo/resources/views/StripePayments/create.blade.php
+      /StripePayDemo/resources/views/layouts/master.blade.php
+      /StripePayDemo/database/migrations/2021_05_17_092807_create_payments_table.php
+
+

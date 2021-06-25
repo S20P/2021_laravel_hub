@@ -1,0 +1,63 @@
+
+
+API 
+http://localhost:8000/api/file-export-excel
+
+Project name : laravel-excel-csv
+
+Databse name : laravel-excel-csv
+
+composer create-project laravel/laravel laravel-excel-csv --prefer-dist
+
+php artisan make:controller TestAPIController
+
+composer require maatwebsite/excel
+
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
+
+php artisan migrate
+
+composer require laravelcollective/bus
+
+
+composer require barryvdh/laravel-debugbar
+
+php artisan make:controller ExcelController
+
+
+php artisan make:import UsersImport --model=User
+php artisan make:export UsersExport --model=User
+
+
+
+
+
+Files changes 
+
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/config/app.php
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/app/Http/Controllers/TestAPIController.php
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/routes/api.php
+
+
+
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/app/Http/Controllers/ExcelController.php
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/routes/web.php
+
+
+
+
+php artisan make:import TestImport
+
+
+php artisan make:model UserScore -m 
+
+
+php artisan storage:link
+
+
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/.env
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/app/Http/Controllers/ExcelController.php
+Laravel/Demo/Excel-CSV-Genrator/laravel-excel-csv/config/filesystems.php
+
+
+composer.phar require maatwebsite/excel

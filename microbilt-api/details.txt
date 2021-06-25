@@ -1,0 +1,37 @@
+
+
+ 
+ https://developer.microbilt.com/
+
+  LOGIN 
+
+   Username: Satish6073 or programmer19@dynamicdreamz.com
+   Password: dynamic@123
+
+  
+  API_REQ_KEY’s Keys
+
+   Consumer Key: MFezc5QB8Ak4PyqjEAxzbm4IlZrJzYAP 
+   Consumer Secret: O3JGRO0mhLGR9Pfj
+
+
+ Uses API  
+
+  https://developer.microbilt.com/apis/public-records-search
+
+  Authorization:
+  Bearer PpQ9w28UTnqMffPvkGKndFW2WkK2
+
+
+
+DB_DATABASE = > laravel_microbilt_api
+
+
+
+
+
+APIs 
+
+
+Bankruptcy Search
+

@@ -1,0 +1,20 @@
+composer create-project --prefer-dist laravel/laravel AdminPanel
+
+https://startbootstrap.com/template/sb-admin
+
+
+
+Demo 1
+
+Laravel 8 User Roles and Permissions Tutorial
+
+https://www.itsolutionstuff.com/post/laravel-8-user-roles-and-permissions-tutorialexample.html
+
+
+php artisan make:model Product -c
+
+
+php artisan make:controller UserController -r
+php artisan make:controller RoleController
+
+

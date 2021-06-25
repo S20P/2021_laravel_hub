@@ -1,0 +1,121 @@
+Laravel-Practical Task
+
+
+Date : 23-05-2021
+
+
+DB_DATABASE = laravel_practical_task
+
+
+
+user Login
+
+Deactivate user
+user1@gmail.com
+123456
+
+dev@gmail.com
+123456
+
+
+admin login 
+admin@gmail.com
+123456
+
+
+
+
+Modules
+
+i. Users
+ii. Posts
+
+
+
+Fields
+
+- * Full Name
+- * Email
+- * Password
+- * Profile Picture (image/*)
+- * Gender (Radio type)
+-
+Phone
+
+
+- * Permissions
+- Post: Create, Update, Delete, View.
+- * Status
+- Default(active)
+1. Active
+- Users can Login and perform actions as
+defined by admin.
+2. Deactivate
+- Won’t able to Login in their account.
+3. Suspended
+- Users can Login to their account but can’t
+perform actions(Create, Update, Delete).
+Users can only view their profiles and
+created posts.b. Posts
+- Admin can perform all actions(Create, Update, Delete)
+- Fields
+- * Title
+- * Image
+Description
+
+
+
+users
+
+first_name 
+last_name
+email
+password
+profile_picture
+gender
+phone
+status
+    Active
+    Deactivate
+    Suspended
+
+
+posts
+
+title
+image
+description
+            
+
+
+composer create-project --prefer-dist laravel/laravel LaravelPracticalTask
+composer require spatie/laravel-permission
+composer require laravelcollective/html
+composer require laravel/ui 
+php artisan ui bootstrap --auth 
+npm install
+npm run dev
+
+php artisan make:middleware IsAdmin
+
+php artisan make:controller Admin/DashboardController
+
+php artisan make:controller Admin/PostsController
+php artisan make:controller Admin/UsersController
+php artisan make:controller Admin/RoleController
+
+php artisan make:model Posts -m
+
+php artisan make:controller PostsController
+php artisan make:controller UsersController
+php artisan make:controller RoleController
+
+php artisan make:seeder PermissionTableSeeder
+php artisan db:seed --class=PermissionTableSeeder
+
+php artisan make:seeder CreateAdminUserSeeder
+php artisan db:seed --class=CreateAdminUserSeeder
+
+php artisan migrate
+
+

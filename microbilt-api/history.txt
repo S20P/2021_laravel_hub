@@ -1,0 +1,27 @@
+Date : 09-06-2021
+
+
+  Refrench = > https://xpertphp.com/laravel-6-jquery-form-validation-example-tutorial/
+ 
+  CURL => https://www.laravelcode.com/post/laravel-55-how-to-make-curl-http-request-example
+   
+  composer create-project --prefer-dist laravel/laravel Microbilt-Developer-Api
+
+
+
+
+php artisan make:model MicrobiltStore -mc
+
+  File changes
+
+  Laravel/Demo/microbilt-api/Microbilt-Developer-Api/app/Http/Controllers/MicrobiltStoreController.php
+
+  Laravel/Demo/microbilt-api/Microbilt-Developer-Api/app/Models/MicrobiltStore.php
+
+  Laravel/Demo/microbilt-api/Microbilt-Developer-Api/routes/web.php
+
+  Laravel/Demo/microbilt-api/Microbilt-Developer-Api/resources/views/MicrobiltStore
+
+  Laravel/Demo/microbilt-api/Microbilt-Developer-Api/database/migrations/2021_06_09_061354_create_microbilt_stores_table.php  
+
+  Laravel/Demo/microbilt-api/Microbilt-Developer-Api/.env

@@ -1,0 +1,150 @@
+
+
+ AllINOneDemo Laravel-8
+
+    -> laravel project include all laravel AllINOneDemo
+
+
+
+ 
+   Demo1 
+     
+     Title : How To Get Current User Location In Laravel
+     Usefull link : https://websolutionstuff.com/post/how-to-get-current-user-location-in-laravel
+     
+     Package :
+       composer require stevebauman/location
+
+
+   Demo2
+
+     Title : Laravel 8 Authentication using Jetstream Example
+     Usefull link : https://websolutionstuff.com/post/laravel-8-authentication-using-jetstream-example
+    
+     Package  :
+       composer require laravel/jetstream
+ 
+
+   Demo3
+
+    Title : Google Recaptcha Example In Laravel
+    Usefull link : https://websolutionstuff.com/post/google-recaptcha-example-in-laravel
+ 
+    
+   Demo 4
+
+    Title : Laravel Custom Maintenance Page
+    Usefull link : https://stackcoder.in/posts/laravel-custom-maintenance-page
+
+
+   Demo 5
+
+    Title : ZOHO crm 
+    
+    php artisan make:model ZohoContacts -mc
+   
+
+    ZOHO_CLIENT_ID=
+    ZOHO_CLIENT_SECRET=
+    ZOHO_REDIRECT_URI=
+    ZOHO_CURRENT_USER_EMAIL=
+    
+    file changes 
+
+    Laravel/Demo/AllInOneDemo/app/Http/Controllers/ZohoController.php
+    Laravel/Demo/AllInOneDemo/app/Models/ZohoContacts.php
+    Laravel/Demo/AllInOneDemo/routes/web.php
+    
+    Laravel/Demo/AllInOneDemo/database/migrations/2021_05_20_103524_create_zohos_table.php
+
+
+
+
+   Demo 6 : Laravel-modules
+
+     composer require nwidart/laravel-modules
+     php artisan module:make Blog
+   
+
+     php artisan module:make-migration create_zoho_contacts_table Blog
+     php artisan module:make-model ZohoContacts Blog
+     php artisan module:migrate Blog
+     php artisan module:make-model ZohoContacts1test -m Blog
+
+
+
+  Demo :  Laravel 8 Soft Delete Example
+
+    php artisan make:model Blog -mc
+    php artisan migrate --path='./database/migrations/2021_05_22_122653_create_blogs_table.php'
+   
+    http://localhost:8000/blog/all
+    http://localhost:8000/blog/list
+    http://localhost:8000/blog/only-trashed
+    http://localhost:8000/blog/store
+    http://localhost:8000/blog/delete/4
+    http://localhost:8000/blog/restore/4
+
+
+   changes files
+   Laravel/Demo/AllInOneDemo/routes/web.php
+   Laravel/Demo/AllInOneDemo/database/migrations/2021_05_22_122653_create_blogs_table.php
+   Laravel/Demo/AllInOneDemo/app/Http/Controllers/BlogController.php
+   Laravel/Demo/AllInOneDemo/app/Http/Middleware/VerifyCsrfToken.php
+   Laravel/Demo/AllInOneDemo/app/Models/Blog.php
+
+   
+
+
+   http://3.138.175.183/reptrics/customers360/APIRedirectUrl
+
+
+
+
+
+
+
+DATE : 25-05-2021
+
+    php artisan make:model ZohoContactsNew -mc
+
+
+
+
+ Demo : Hello-Sign API Signature
+
+Account login Details
+
+https://app.hellosign.com/
+programmer19@dynamicdreamz.com
+dynamic@123
+
+
+API KEY
+
+HelloSign v3: 143f9e51c7105002523169a92a187fb535c3f6ffcc64841b94da3d5e3b98ce27
+
+
+Template created
+
+ID: 1b5cc661a752cae262cf0c7b2930d0e41f9cf0b2
+
+You've created a locked template. To use this template, delete an unlocked template or upgrade to a higher plan.
+
+DEMO TEST BY SATISH
+
+
+
+php artisan make:Controller HelloSignAPIController
+
+changes file
+Laravel/Demo/AllInOneDemo/app/Http/Controllers/HelloSignAPIController.php
+
+
+
+ 'HELLOSIGN_API_KEY' => 'Your64CharacterAPIKey',
+'HELLOSIGN_CLIENT_KEY' => 'Your32CharacterClientKey',
+'HELLOSIGN_EMAIL' => 'your-email@example.com',
+'HELLOSIGN_NAME' => 'Test HelloSign User',
+'HELLOSIGN_TEST_MODE' => 1,
+'HELLOSIGN_TEMPLATE_ID' => 'Your40CharacterTemplateID',
